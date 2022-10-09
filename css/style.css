@@ -14,15 +14,15 @@ header {
     text-align:center;
 }
 
-#head {
+#hero {
     text-align: center;
 }
 
-#head img {
-    width: 100px;
+#hero img {
+    width: 300px;
 }
 
-#body {
+#bio {
     text-align: center;
 }
 
