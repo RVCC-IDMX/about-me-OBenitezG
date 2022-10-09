@@ -7,7 +7,11 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family:Comfortaa;
-    font-size: 300%;
+    text-align:center;
+}
+
+h2 {
+    font-size:30pt;
 }
 
 header {
@@ -31,4 +35,19 @@ footer {
     color: #F5F8FF;
     border: 2px solid #9E9685;
     background-color: #9E9685;
+}
+
+#hobbies {
+    text-align:center;
+}
+
+ul li {
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+    transition: transform 0.2s;
+}
+
+ul li:hover {
+    transform: scale(1.5);
 }
