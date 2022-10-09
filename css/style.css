@@ -1,3 +1,5 @@
+                                    /* General Section */
+
 body {
     font-family:Comfortaa;
     background-color: #78839E;
@@ -12,7 +14,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
     font-size:30pt;
+    font-style: normal;
 }
+
+                                    /* Hero Section */
 
 header {
     text-align:center;
@@ -26,24 +31,21 @@ header {
     width: 300px;
 }
 
+                                    /* Bio Section */
+
 #bio {
     text-align: center;
 }
 
-footer {
-    text-align:center;
-    color: #F5F8FF;
-    border: 2px solid #9E9685;
-    background-color: #9E9685;
-}
+                                    /* Hobbies Section */
 
 #hobbies {
     text-align:center;
 }
 
 ul li {
-    display: inline-block;
-    text-align: left;
+    display: block;
+    text-align: center;
     transition: transform 0.2s;
 }
 
@@ -53,4 +55,27 @@ ul li:hover {
 
 html {
     scroll-behavior: smooth;
+}
+
+                                    /* Gallery Sexction */
+
+#gallery {
+    font-style: italic;
+    text-align: center;
+}
+
+#gallery img {
+    max-width:100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+                                    /* Footer Section */
+
+footer {
+    text-align:center;
+    color: #F5F8FF;
+    border: 2px solid #9E9685;
+    background-color: #9E9685;
 }
