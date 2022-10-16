@@ -77,12 +77,12 @@ html {
 
                                     /* Article Section */
 
-#article {
-    max-width: 40rem;
+#lit {
+    max-width: 80rem;
     margin: 0 auto;
 }
 
-#article p:first-child:first-letter {
+#lit p:first-child:first-letter {
     font-size: 4rem;
     float: left;
     line-height: 1;
@@ -112,4 +112,37 @@ footer {
     justify-content: center;
     align-items: center;
     }
+
+    #lit div {
+        max-width: 100%;
+        columns: 10rem;
+    }
+}
+
+@media screen and (min-width: 100em) {
+    
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    hr {
+        display: none;
+    }
+
+    #gallery h2 {
+        grid-column: 1/-1;
+    }
+
+    figure {
+        display: block;
+    }
+
+    #lit div {
+        max-width: 100%;
+        columns: 20rem;
+    }
+
+
+
 }
