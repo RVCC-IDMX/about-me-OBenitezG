@@ -88,6 +88,21 @@ html {
     line-height: 1;
 }
 
+#video {
+    border: solid black 2px;
+    text-align: center;
+    padding-bottom: 5em;
+}
+
+#video > h3 {
+    padding-top: 0.6em;
+}
+
+#video-caption {
+    color: white;
+    font-size: 0.8em;
+    font-style: italic;
+}
 
 
                                     /* Footer Section */
