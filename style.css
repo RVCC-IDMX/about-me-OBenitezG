@@ -80,6 +80,7 @@ html {
 #lit {
     max-width: 80rem;
     margin: 0 auto;
+    padding-bottom:4em;
 }
 
 #lit p:first-child:first-letter {
@@ -94,7 +95,7 @@ html {
     padding-bottom: 5em;
 }
 
-#video > h3 {
+#video h3 {
     padding-top: 0.6em;
 }
 
