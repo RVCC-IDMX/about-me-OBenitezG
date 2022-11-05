@@ -46,14 +46,10 @@ header {
     align-items: center;
 }
 
-ul li {
+#hobbieslist {
     display: block;
     text-align: center;
-    transition: transform 0.2s;
-}
-
-ul li:hover {
-    transform: scale(1.5);
+    list-style: none;
 }
 
 html {
@@ -158,7 +154,10 @@ footer {
         max-width: 100%;
         columns: 20rem;
     }
+}
 
-
-
+                                /* Contact Us */
+                    
+#formElements {
+    display:grid;
 }
