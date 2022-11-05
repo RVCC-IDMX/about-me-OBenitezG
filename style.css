@@ -50,6 +50,7 @@ header {
     display: block;
     text-align: center;
     list-style: none;
+    padding: 0px;
 }
 
 html {
@@ -160,4 +161,47 @@ footer {
                     
 #formElements {
     display:grid;
+    row-gap: .8em;
+}
+
+#contact {
+    padding: 1em;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+fieldset {
+    border: 2px solid #1e1e1e;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 1em;
+}
+
+legend {
+    background-color: #1e1e1e;
+    color: white;
+    padding: .5em;
+    border-radius: 1em;
+}
+
+#contact input, #contact textarea, #contact select, #contact button {
+    padding: .5em;
+    font-size: 1em;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0px;
+}
+
+#contact li {
+    margin: 1rem;
+}
+
+#contact button {
+    background-color: #1e1e1e;
+    color: white;
+    max-width: 400px;
+    width: 50%;
+    justify-self: center;
 }
