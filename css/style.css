@@ -4,7 +4,7 @@ body {
     font-family:Comfortaa;
     background-color: #78839E;
     color:#EEDCB2;
-
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -115,24 +115,31 @@ footer {
                                     /* Media Screens */
 
 @media screen and (min-width: 60em) {
+    
     figure {
         display:grid;
         grid-template-columns: 2fr 1fr;
     }
 
     figcaption {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #lit div {
         max-width: 100%;
         columns: 10rem;
     }
+
+    #myVideo {
+        width: 100%;
+        height: 100%;
+    }
+
 }
 
-@media screen and (min-width: 100em) {
+@media screen and (min-width: 100rem) {
     
     #gallery {
         display: grid;
@@ -155,6 +162,12 @@ footer {
         max-width: 100%;
         columns: 20rem;
     }
+
+    #myVideo {
+        width: 560px;
+        height: 315px;
+    }
+
 }
 
                                 /* Contact Us */
