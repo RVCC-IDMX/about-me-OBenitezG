@@ -1,169 +1,162 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
+    <!-- HTML Boilerplate & Links -->
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>About Me Assignment</title>
-    
+    <link rel="Favicon Icon" type="image/svg" href="assets/globe-logo.svg"/>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
     <link href="css/style.css" rel="stylesheet">
     <link href="css/nav.css" rel="stylesheet">
 
 </head>
+
 <body>
-  
-    <!-- the body element contains all content shown to a visitor -->
+    
+    <!-- All Content Shown to Visitor -->
 
     <header>
-        
-        <!-- the header shows logo and page title -->
-        
-        <nav class="navbar">
 
-            <div class="logo">
+        <!--    Contains Home Page -->
 
-                <img src="img/logo-96X96.svg" alt="Blue origami logo"> 
-        
+        <nav id=" navbar">
+
+            <!-- Contains Logo and Navbar-->
+
+            <div id="logo">
+
+                <img src="assets/globe-logo.svg" alt="Globe Logo">
+
                 <h1>Web Dev I</h1>
-            
+
             </div>
 
-            <div class="navbar-links">
+            <div class="navbar-links" id="navLinks">
+
+                <i class="fa fa-times" onclick="hideMenu()"></i>
 
                 <ul>
 
-                    <li> <a href="#bio"> Bio </a> </li>
+                    <li> <a href="#about"> Bio </a> </li>
 
                     <li> <a href="#gallery"> Gallery </a> </li>
 
-                    <li> <a href="#lit"> Blog </a> </li>
+                    <li> <a href="#blog"> Blog </a> </li>
 
-                    <li> <a href="#contact"> Contact Me </a> </li>
+                    <li> <a href="#contact"> Contact</a> </li>
 
                 </ul>
 
             </div>
 
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
         </nav>
-         
-    </header>
-   
-    <main>
-        
-        <!-- the main envelops important page content -->
-        
+
         <section id="hero">
             
-            <!-- hero section: shows profile image, name & location -->
+            <!-- hero section: shows profile image, name & Bio -->
 
-            <img src="img/avataaars.png" alt="Avatar picture of me">
+            <div id="about">
+
+                <img src="assets/profile-pic.jpg" alt="Picture of me">
             
-            <div>
-                
-                <p>Obdulio Benitez Garcia</p>
-                
-                <p>North Plainfield, NJ</p>
+                <div id="about-text">
 
-            </div>
-        
-        </section>
+                    <h2>Hello, I'm Obdulio</h2>
 
-        <section id="bio">
+                    <h5>Majoring in UX Interface and Web Design</h5>
 
-            <!-- bio section!: personal info (not too personal) -->
+                    <p>Currently enrolled at Raritan Valley Community College as a full time student. I wanted to major in something that engaged my creative side as I always loved reading and drawing. I want a career that lets me persue and continue working on my creativity while also including my love for technology. I've enjoyed leaning about HTML and CSS while taking this Web Development 1 class as I've always found that trying to learn how to code on my own was so daunting to me as it was so overwhelming. Im glad I've taken my first step in trying to learn what a few months ago I would have found impossible to do. </p>
 
-            <h2>Biography:</h2>
-
-            <div>
-
-                <p>I want to be...</p>
-
-                <p>feel accomplished with the work and change I have made in the recent years.</p>
-
-
+                </div>
 
             </div>
 
-
         </section>
+         
+    </header>
 
-        <section id="hobbies">
+    <main>
 
-            <h2>Hobbies:</h2>
-
-            <ul id="hobbieslist">
-                
-                <li><a href="#drawing">Drawing</a></li><br>
-
-                <li>Music</li><br>
-
-                <li><a href="#manga">Manga</a></li><br>
-
-                <li>Video Games</li><br>
-
-                <li><a href="#cats">Chilling with my cats</a></li><br>
-
-            </ul>
-
-        </section>
+        <!-- The main envelops important page content -->
 
         <section id="gallery">
 
-            <h2>Photo Gallery</h2>
+            <h1> Gallery </h1>
 
-            <hr>
+            <p>Here are some of the things I enjoy</p>
 
-            <figure id="drawing">
+            <div id="row">
 
-                <img src="img/art-book-640w.jpg" alt="A page from my doodle book">
+                <div id="gallery-col">
+                    
+                    <img src="assets/art-book.jpg" alt="A doodle of my family">
+                    
+                    <h3> Drawing </h3>
 
-                <figcaption>A doodle of my family.</figcaption>
+                    <p>I like drawing from time to time, when I get a small burst of inspiration. Most of the time I do doodles but I never tend to finish them. I always get so caught up in trying to make it as perfect as I invisioned it to be, that ultimatley I end up dissapointed with my work and leave it unfinished. I love drawing low fantasy and creating monsters for a bestieary.</p>
 
-            </figure>
+                </div>
 
-            <hr>
+                <div id="gallery-col">
+                    
+                    <img src="assets/mob-manga.jpg" alt="Mob Psycho 100 manga series">
+                    
+                    <h3> Reading </h3>
 
-            <figure id="manga">
+                    <p>One of my favorite manga is the "Mob Psycho 100" series. The art is very crude and simple but that is why I love it. The author didn't let his lack of skill in art stop him from creating the series. It tells such a beautiful and funny coming of age story of a middle schooler just trying to figure out what he wants to do with his life. </p>
+                    
+                </div>
 
-                <img src="img/mob-manga-640w.jpg" alt="My manga collection">
+                <div id="gallery-col">
+                    
+                    <img src="assets/cats-bed.jpg" alt="Two cats laying in bed">
+                    
+                    <h3> Hanging out with my cats </h3>
 
-                <figcaption>My favorite manga series.</figcaption>
+                    <p>I have two cats named "Morgana" and "Haru". I love them deeply and I believe they understand that love. They always follow me around and always trying to make me pet them. Morgana even lets me craddle him like a baby in my arms. I spend a lot of my time on my computer so you'll usually find them curled up sleeping on the bed next to me.</p>
+                    
+                </div>
 
-            </figure>
-
-            <hr>
-
-            <figure id="cats">
-
-                <img src="img/cats-bed-640w.jpg" alt="cats sleeping on a bed">
-
-                <figcaption>My two cats (Morgana and Haru) sleeping on my bed.</figcaption>
-
-            </figure>
-
-
+            </div>
 
         </section>
 
-        <article id="lit">
+        <article id="blog">
 
-            <h2>An Excerpt From Sherlock Holmes</h2>
+            <div id="blog-text">
 
-            <div>
+                <h1>Embedded static Google map using iFrame</h1>
 
-                <p>On entering the house, however, I examined, as you remember, the sill and framework of the hall window with my lens, and I could at once see that someone had passed out. I could distinguish the outline of an instep where the wet foot had been placed in coming in. I was then beginning to be able to form an opinion as to what had occurred. A man had waited outside the window; someone had brought the gems; the deed had been overseen by your son; he had pursued the thief; had struggled with him; they had each tugged at the coronet, their united strength causing injuries which neither alone could have effected. He had returned with the prize, but had left a fragment in the grasp of his opponent. So far I was clear. The question now was, who was the man and who was it brought him the coronet?</p>
+                <p>With more than 150 million monthly users, Google maps is a great implementation to a website. This is especially true for websites that need to show their users locations to their businesses. These businesses can include retail stores, restaurants, and other business that will need their clients to locate them in person. There are many benefits to embedding a map into your website such as it helps customers or website visitors get directions to your business without the need of having to leave your website and opening another browser window. Having all the information needed on one location is very user intuitive and lessens the stress on the user to find the information all on their own which could end up being wrong. </p>
 
-                <p>It is an old maxim of mine that when you have excluded the impossible, whatever remains, however improbable, must be the truth. Now, I knew that it was not you who had brought it down, so there only remained your niece and the maids. But if it were the maids, why should your son allow himself to be accused in their place? There could be no possible reason. As he loved his cousin, however, there was an excellent explanation why he should retain her secret--the more so as the secret was a disgraceful one. When I remembered that you had seen her at that window, and how she had fainted on seeing the coronet again, my conjecture became a certainty.</p>
+                <p>Another benefit of implementing google maps onto your website is that it acts almost like another contact form. Google maps could be used complimenting your “Contact Us” form as if the business is already registered with google it can show very useful information. This information can be used as an alternative way to contact you as Google maps would contain your business address, phone number, any more website links, directions, reviews, review stars, and much more information already set up by google.</p>
+                    
+                <p>Google will also highlight other areas of interest around your location. This information can be useful as it gives the viewer a sense of location making it easier for them to locate. Google maps highlights attractions such as parking areas, restaurants, theaters, parks, etc. Making it very useful for viewers to plan and navigate how they plan to get and then do once they arrive to the location. It can also be used for advertisement purposes, for example if your website is walking distance from a mode of transportation like train stop or bus stop, it may change how someone would visit your location. Also, for businesses with multiple locations it will help users find which one exactly they want to go to.</p>
+                    
+                <p>Google also shows a lot of useful information. Other than your basic contact like phone number and address. It shows things like business hours, ratings, menu link for restaurants, peak hours, photos, and much more. This is all super intuitive to the user as it will allow them to plan accordingly make accommodations for themselves. An example of how useful this information can be is if someone is anxious around large crowds, google maps showing peak hours for a business like a restaurant of a gym would allow the viewer to plan their trip accordingly when there are less people. </p>
+                    
+                <p>With how much information and benefits google maps offer not only the website viewer but also the website owner themselves, how do you implement one into your own website? Using an embedded link and iframe tag, we can implement an embedded map onto our website just like we did in an assignment earlier this semester of Web Development 1 with professor Steve Caruso. Navigate to google maps and find the location you want to pin on your website. Click share on go onto the “embed a map” tab and it will give you a link. In your HTML file, paste the link you copied. Embed automatically uses the iframe and src tags. All you must do is style it according to where you want it and how you want it to look. For my demonstration I have embedded the Google map location for college I am currently attending Raritan Valley Community College.</p>
 
-                <p>And who could it be who was her confederate? A lover evidently, for who else could outweigh the love and gratitude which she must feel to you? I knew that you went out little, and that your circle of friends was a very limited one. But among them was Sir George Burnwell. I had heard of him before as being a man of evil reputation among women. It must have been he who wore those boots and retained the missing gems. Even though he knew that Arthur had discovered him, he might still flatter himself that he was safe, for the lad could not say a word without compromising his own family.</p>
+            </div>
 
-                <p>Well, your own good sense will suggest what measures I took next. I went in the shape of a loafer to Sir George's house, managed to pick up an acquaintance with his valet, learned that his master had cut his head the night before, and, finally, at the expense of six shillings, made all sure by buying a pair of his cast-off shoes. With these I journeyed down to Streatham and saw that they exactly fitted the tracks.</p>
-                
+            <div id="map" style="width: 100%">
+
+                <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=118%20Lamington%20Rd,%20Branchburg,%20NJ%2008876+(Raritan%20Valley%20Community%20College)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure distance on map</a></iframe></div>
+            
             </div>
 
         </article>
@@ -180,11 +173,12 @@
 
         <section id="contact">
 
-            <h2>Contact Us:</h2>
+            <h2>Contact Me:</h2>
 
             <form id="contactForm" name="contactForm" method="post" data-netlify="true">
 
                 <fieldset>
+                    
                     <legend>Contact Form</legend>
 
                     <div id="formElements">                  
@@ -243,12 +237,25 @@
 
     <footer>
 
-        ©2022 - Obdulio Benitez Garcia
-
+        ©2022 - Obdulio Benitez Garcia   <a id="github" href="https://github.com/RVCC-IDMX/about-me-OBenitezG.git">Github Repo</a>
     </footer>
 
 
-  
+    </main>
+
+    <!-- JavaScript for Togglt Menu -->
+
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
 
 </body>
+
 </html>

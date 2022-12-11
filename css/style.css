@@ -1,99 +1,224 @@
-                                    /* General Section */
+/* Base Section */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Background Photo */
+
+header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("../assets/forest-light-beam-john-towner.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
 
 body {
-    font-family:Comfortaa;
-    background-color: #78839E;
+    font-family: Comfortaa;
+    background-color: #484d4e;
     color:#EEDCB2;
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family:Comfortaa;
-    text-align:center;
+/* Biography */
+
+#about {
+	width: 100%;
+	padding: 100px 0px;
 }
 
-h2 {
-    font-size:30pt;
-    font-style: normal;
+#about img {
+	height: auto;
+	width: 220px;
+    float: right;
+    padding-top: 10rem;
+    padding-right: 25rem;
 }
 
-                                    /* Hero Section */
-
-header {
-    text-align:center;
+#about-text {
+	margin: 0;
+    padding-left: 10rem;
+    padding-top: 8rem;
 }
 
-#hero {
-    text-align: center;
+#about-text h2 {
+	color: #EEDCB2;
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
 }
 
-#hero img {
-    width: 300px;
+#about-text h5 {
+	color: #EEDCB2;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
 }
 
-                                    /* Bio Section */
-
-#bio {
-    text-align: center;
+#about-text p {
+    color: whitesmoke;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+    width: 800px;
 }
 
-                                    /* Hobbies Section */
+@media(max-width: 1919px ) {
 
-#hobbies {
-    text-align:center;
-    display: flex; 
-    flex-direction: column; 
-    align-items: center;
+    #about img {
+        display: none;
+    }
 }
 
-#hobbieslist {
-    display: block;
-    text-align: center;
-    list-style: none;
-    padding: 0px;
+@media(max-width: 1200px ) {
+
+    #about-text {
+        width: 300px;
+        padding-left: 10px;
+    }
+
+    #about-text p {
+        width: 300px;
+    }
+
 }
 
-html {
-    scroll-behavior: smooth;
-}
+/* Gallery */
 
-                                    /* Gallery Sexction */
+#row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
 
 #gallery {
-    font-style: italic;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+#gallery h1 {
+    font-size: 80px;
+    padding-bottom: 10px;
+    letter-spacing: 10px;
+}
+
+#gallery-col {
+    flex-basis: 31%;
+    background: #797575;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    font-family: Comfortaa;
+}
+
+#gallery-col:hover {
+    box-shadow: 0 0 20px 0px rgba( 0, 0, 0, 0.2);
+}
+
+#gallery-col img {
+    height: 50%;
+    width: 80%;
+    border-radius: 10px;
+}
+
+#gallery-col p {
+    padding: 0;
+    color: whitesmoke;
+}
+
+#gallery-col h3 {
+    font-family: Comfortaa;
+    color: #EEDCB2;
+    margin-top: 30px;
+    margin-bottom: 15px;
     text-align: center;
 }
 
-#gallery img {
-    max-width:100%;
+@media(max-width: 1427px) {
+
+    #row {
+        flex-direction: column;
+    }
+
+    #gallery h1{
+        font-size: 60px;
+    }
+
 }
 
-#gallery figure {
+/* Blog */
+
+#blog {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "blog-text map";
+}
+
+#blog-text {
+    grid-area: blog-text;
+}
+
+#blog-text h1 {
+    padding-bottom: 2rem;
     text-align: center;
 }
 
-                                    /* Article Section */
-
-#lit {
-    max-width: 80rem;
-    margin: 0 auto;
-    padding-bottom:4em;
+#blog-text p {
+    color: whitesmoke;
+    text-align: center;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    text-align: left;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
-#lit p:first-child:first-letter {
-    font-size: 4rem;
-    float: left;
-    line-height: 1;
+@media(max-width: 1100px) {
+
+    #blog {
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "blog-text"
+        "map"; 
+    }
+
+    #map {
+        width: 50%;
+    }
+
 }
+
+/* Video */
 
 #video {
-    border: solid black 2px;
+    margin: auto;
+    background: #797575;
+    border-radius: 10px;
     text-align: center;
     padding-bottom: 5em;
+    width: 50%;
+
 }
 
 #video h3 {
-    padding-top: 0.6em;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 #video-caption {
@@ -102,35 +227,7 @@ html {
     font-style: italic;
 }
 
-
-                                    /* Footer Section */
-
-footer {
-    text-align:center;
-    color: #F5F8FF;
-    border: 2px solid #9E9685;
-    background-color: #9E9685;
-}
-
-                                    /* Media Screens */
-
 @media screen and (min-width: 60em) {
-    
-    figure {
-        display:grid;
-        grid-template-columns: 2fr 1fr;
-    }
-
-    figcaption {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #lit div {
-        max-width: 100%;
-        columns: 10rem;
-    }
 
     #myVideo {
         width: 100%;
@@ -140,28 +237,6 @@ footer {
 }
 
 @media screen and (min-width: 100rem) {
-    
-    #gallery {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    hr {
-        display: none;
-    }
-
-    #gallery h2 {
-        grid-column: 1/-1;
-    }
-
-    figure {
-        display: block;
-    }
-
-    #lit div {
-        max-width: 100%;
-        columns: 20rem;
-    }
 
     #myVideo {
         width: 560px;
@@ -170,28 +245,29 @@ footer {
 
 }
 
-                                /* Contact Us */
-                    
+/* Contact Me */
+
 #formElements {
     display:grid;
     row-gap: .8em;
 }
 
 #contact {
+    background-color: #141414;
     padding: 1em;
     max-width: 600px;
     margin: 2rem auto;
 }
 
 fieldset {
-    border: 2px solid #1e1e1e;
+    border: 2px solid #141414;
     margin-top: 1em;
     margin-bottom: 1em;
     border-radius: 1em;
 }
 
 legend {
-    background-color: #1e1e1e;
+    background-color: #141414;
     color: white;
     padding: .5em;
     border-radius: 1em;
@@ -217,4 +293,19 @@ legend {
     max-width: 400px;
     width: 50%;
     justify-self: center;
+}
+
+/* Footer */
+
+footer {
+    text-align:center;
+    color: #F5F8FF;
+    border: 2px solid #141414;
+    background-color: #141414;
+}
+
+#github {
+    padding-left: 5em;
+    text-decoration: none;
+    color: whitesmoke;
 }
